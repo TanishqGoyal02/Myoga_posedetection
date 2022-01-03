@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/posePlayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fadingEdge="none"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/workoutType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/workoutType"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sitkabanner"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/posePlayer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/countDown"
+        android:layout_width="147dp"
+        android:layout_height="138dp"
+        android:background="@drawable/ellipse_21"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:fontFamily="@font/sitkabanner"
+        android:inputType="number"
+        android:outlineProvider="none"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0B0A0A"
+        android:textSize="88sp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="221dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="14sp"
+        android:autoSizeStepGranularity="10sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/group_47"
+        android:backgroundTint="#ADBABC"
+        android:fontFamily="@font/candara"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="88dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/doneButton"
+        app:layout_constraintEnd_toEndOf="@+id/doneButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/doneButton"
+        app:layout_constraintTop_toTopOf="@+id/doneButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/done" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="197dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutType"
+        app:srcCompat="@drawable/ellipse_20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

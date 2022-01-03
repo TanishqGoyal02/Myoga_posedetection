@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+<!--    AIzaSyC6I5inDAdAlH9j2_OOER2cmCGAew79XN4-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/asanaCompletion"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+<!--    <com.cunoraz.gifview.library.GifView-->
+<!--    android:id="@+id/asana_steps"-->
+<!--    android:layout_width="1000dp"-->
+<!--    android:layout_height="1000dp"-->
+<!--    custom:gif="@drawable/asana"/>-->
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ytPlayer"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+<!--<ProgressBar-->
+<!--        android:id="@+id/circular_progress"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        style="android:progressBarStyleHorizontal"-->
+<!--        android:progress="10"-->
+<!--        android:progressDrawable="@drawable/circle_progress"/>-->
+
+    <!--        android:layout_below="@id/asana_steps"-->
+
+    </LinearLayout>
+
+</RelativeLayout>

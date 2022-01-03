@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/arial"
+            android:text="DAILY WORKOUTS"
+            android:textColor="@color/brown"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/arial"
+            android:text="date"
+            android:textColor="#AD907A"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/arial"
+                android:text="My Plan"
+                android:textColor="#4E4240"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="97dp"
+                android:fontFamily="@font/arial"
+                android:textColor="#784E4240"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/weekNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/arial"
+            android:text="Level 4"
+            android:textColor="@color/brown"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/arial"
+            android:text="20 min"
+            android:textColor="#784E4240"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekNumber" />
+
+
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            app:srcCompat="@drawable/dashboard_image5" />
+
+
+        <TextView
+            android:id="@+id/workoutsCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/arial"
+            android:text="53"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/arial"
+            android:text="workouts completed"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/workoutsCompleted" />
+
+
+        <TextView
+            android:id="@+id/hoursSpent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/arial"
+            android:text="17"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:fontFamily="@font/arial"
+            android:text="minutes spent on training"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hoursSpent" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="32dp"
+            android:max="100"
+            android:progress="75"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="245dp"
+            app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+            app:layout_constraintStart_toStartOf="@+id/frameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            app:srcCompat="@drawable/rectangle912x" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/arial"
+            android:text="Percentage level of completion"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/percentComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/arial"
+            android:text="75%"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+
+        <Button
+            android:id="@+id/day1"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="1"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp" />
+
+
+        <Button
+            android:id="@+id/day2"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="2"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp"  />
+
+        <Button
+            android:id="@+id/day3"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="3"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/day4"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="4"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp" />
+
+
+        <Button
+            android:id="@+id/day5"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="5"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp" />
+
+
+        <Button
+            android:id="@+id/day6"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="6"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp" />
+
+
+        <Button
+            android:id="@+id/day7"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/arial"
+            android:text="7"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:strokeColor="#d3d3d3"
+            app:strokeWidth="2dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

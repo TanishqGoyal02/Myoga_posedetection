@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MYoga</string>
+    <string name="userName"> </string>
+    <string name="email"> </string>
+    <string name="userGender"> </string>
+    <string name="userAge"> </string>
+    <string name="userHeight"> </string>
+    <string name="userWeight"> </string>
+    <string name="InformUser">Tell us a little about yourself</string>
+    <string name="day1">1</string>
+    <string name="day7">7</string>
+    <string name="day6">6</string>
+    <string name="day5">5</string>
+    <string name="day4">4</string>
+    <string name="day3">3</string>
+    <string name="day2">2</string>
+    <string name="done">Done</string>
+
+<!--    Tesorflow string-->
+
+    <string name="tfe_pe_app_name">TFL Pose Estimation</string>
+    <string name="tfe_pe_request_permission">This app needs camera permission.</string>
+    <string name="tfe_pe_tv_score">Score: %.2f</string>
+    <string name="tfe_pe_tv_model">Model: </string>
+    <string name="tfe_pe_tv_time">Time: %.2f ms</string>
+    <string name="tfe_pe_tv_device">Device: </string>
+
+    <string-array name="tfe_pe_models_array">
+        <item>Movenet Lightning</item>
+        <item>Movenet Thunder</item>
+        <item>Posenet</item>
+    </string-array>
+
+    <string-array name="tfe_pe_device_name">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

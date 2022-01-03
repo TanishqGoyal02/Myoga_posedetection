@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/posePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
+        android:fadingEdge="none"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/workoutType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/arial"
+        android:text="Workout Type"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/posePlayer"
+        app:layout_constraintStart_toStartOf="@+id/posePlayer"
+        app:layout_constraintTop_toBottomOf="@+id/posePlayer" />
+
+    <TextView
+        android:id="@+id/countDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/arial"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="1:30"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/brown"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/workoutType"
+        app:layout_constraintStart_toStartOf="@+id/workoutType"
+        app:layout_constraintTop_toBottomOf="@+id/workoutType" />
+
+    <TextView
+        android:id="@+id/countDownBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/countdown"
+        android:fontFamily="@font/arial"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/brown"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/workoutType"
+        app:layout_constraintStart_toStartOf="@+id/workoutType"
+        app:layout_constraintTop_toBottomOf="@+id/workoutType" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/brown"
+        android:fontFamily="@font/arial"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/workoutType"
+        app:layout_constraintTop_toBottomOf="@+id/posePlayer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
